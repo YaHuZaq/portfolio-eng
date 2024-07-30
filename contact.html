@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+ <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    body
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", cursive;
+        background: #135;
+    }
+    .container{
+        padding: 2% 15%;
+        
+    }
+    .container h2{
+        color: #eef;
+        font-size: 2.5rem;
+    }
+    .container .most{
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+          gap: 50px;
+          justify-content: center;
+          padding-top: 50px;
+    }
+    .container .most .content{
+        align-items: center;
+          display: flex;
+          flex-direction: column;
+          font-family: "Poppins", cursive;
+          justify-content: space-around;
+          box-shadow: 0px 3px 8px #444;
+          border-radius: 5px;
+          padding: 20px 30px;
+          background: rgb(194, 201, 136);
+          transition: .2s ease-in-out;
+    }
+    .container .most .content:hover{
+        transform: scaleY(0.9);
+    }
+    .container .most .content img{
+        height: 100px;
+        width: 100px;
+    }
+
+    .container .most .content h3{
+        font-size: 1.5rem;
+        color: #123;
+    }
+    .container .most .content p{
+        font-size: 1rem;
+        color: #555;
+    }
+
+    .form-container{
+        padding: 1% 25%;
+
+    }
+    .form-container h2{
+        color: #eee;
+        font-size: 1.5rem; 
+    }
+    .form-container .form-cnt{
+        display: flex;
+        padding: 15px 100px;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+        flex-direction: column;
+        padding: 80px 10px;
+    }
+    .form-container .form-cnt form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .form-container .form-cnt input{
+        padding: 15px 100px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        font-family: "Poppins", cursive;
+    }
+    .form-container .form-cnt textarea{
+        padding: 40px 100px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        font-family: "Poppins",cursive;
+    }
+    .form-container .form-cnt button{
+        background: rgb(194, 201, 136);
+        padding: 10px 150px;
+        border-radius: 5px;
+        border: none;
+        color: #123;
+        outline: none;
+        font-family: "Poppins", cursive;
+    }
+    .footer{
+    height: 500px;
+    width: 100%;
+    background: #123;
+    bottom: 0;
+}
+
+.footer .head {
+    display: block;
+    margin-top: 80px;
+}
+
+.footer .head h3 {
+    margin: 5px;
+    color: #fff;
+    top: 30px;
+    position: relative;
+    font-size: 0.9rem;
+}
+
+
+
+.footer .media{
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.footer .media img{
+    margin: 10px;
+    display: block;
+}
+
+.footer .page{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: -10px;
+}
+
+.footer .page footer{
+    font-size: 1rem;
+    color: #e99;
+}
+
+.footer .page h4{
+    font-size: 1.2rem;
+    color: #fee;
+    text-align: center;
+}
+
+@media (max-width:1300px) {
+    
+    .container{
+        padding: 2% 10%;
+        
+    }
+    
+    .container .most{
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+          gap: 50px;
+          justify-content: center;
+          padding-top: 50px;
+    }
+    .container .most .content{
+        align-items: center;
+          display: flex;
+          flex-direction: column;
+          font-family: "Poppins", cursive;
+          justify-content: space-around;
+          box-shadow: 0px 3px 8px #444;
+          border-radius: 5px;
+          padding: 20px 30px;
+          background: rgb(194, 201, 136);
+          transition: .3s ease-in-out;
+    }
+}
+@media (max-width:1138px) {
+    
+    .container{
+        padding: 2% 5%;
+        
+    }
+    
+    .container .most{
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+          gap: 50px;
+          justify-content: center;
+          padding-top: 50px;
+    }
+    .container .most .content{
+        align-items: center;
+          display: flex;
+          flex-direction: column;
+          font-family: "Poppins", cursive;
+          justify-content: space-around;
+          box-shadow: 0px 3px 8px #444;
+          border-radius: 5px;
+          padding: 20px 30px;
+          background: rgb(194, 201, 136);
+          transition: .3s ease-in-out;
+    }
+}
+
+@media (max-width:1012px) {
+    
+    .container{
+        padding: 2% 3%;
+        
+    }
+    
+
+    .container h2{
+        color: #eef;
+        font-size: 2.5rem;
+        padding: 30px;
+    }
+    .container .most{
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+          gap: 50px;
+          justify-content: center;
+          padding-top: 50px;
+    }
+    .container .most .content{
+        align-items: center;
+          display: flex;
+          flex-direction: column;
+          font-family: "Poppins" cursive;
+          justify-content: space-around;
+          box-shadow: 0px 3px 8px #444;
+          border-radius: 5px;
+          padding: 20px 30px;
+          background: rgb(194, 201, 136);
+          transition: .3s ease-in-out;
+    }
+}
+
+@media (max-width:970px) {
+    
+    .container{
+        padding: 2% 3%;
+        
+    }
+    
+
+    .container h2{
+        color: #eef;
+        font-size: 2.5rem;
+        padding: 30px;
+    }
+    .container .most{
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+          gap: 50px;
+          justify-content: center;
+          padding-top: 50px;
+    }
+    .container .most .content{
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          font-family: "Poppins", cursive;
+          justify-content: space-around;
+          box-shadow: 0px 3px 8px #444;
+          border-radius: 5px;
+          padding: 10px 5px;
+          background: rgb(194, 201, 136);
+          transition: .3s ease-in-out;
+    }
+}
+
+@media (max-width:628px) {
+    
+    .container{
+        padding: 2% 3%;
+        
+    }
+    
+
+    .container h2{
+        color: #eef;
+        font-size: 2rem;
+        padding: 30px;
+    }
+    .container .most{
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+          gap: 50px;
+          justify-content: center;
+          padding-top: 50px;
+    }
+    .container .most .content{
+        align-items: center;
+          display: flex;
+          flex-direction: column;
+          font-family: "Poppins", cursive;
+          justify-content: space-around;
+          box-shadow: 0px 3px 8px #444;
+          border-radius: 5px;
+          padding: 10px 10px;
+          background: rgb(194, 201, 136);
+          transition: .3s ease-in-out;
+    }
+    .form-container h2{
+        color: #eee;
+        font-size: 1rem; 
+    }
+
+    .form-container .form-cnt input{
+        padding: 15px 80px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        font-family: "Poppins", cursive;
+    }
+    .form-container .form-cnt textarea{
+        padding: 40px 80px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        font-family: "Poppins", cursive;
+    }
+    .form-container .form-cnt button{
+        padding: 10px 130px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        font-family: "Poppins", cursive;
+    }
+}
+
+ </style>
+<body>
+    <div class="container">
+        <h2>Get intouch with me</h2>
+          <h2 style="
+           font-size: 2rem;
+            color: rgb(239, 250, 138); 
+           margin-left: 30px;
+          ">for more information</h2>
+      <div class="most">
+        <div class="content">
+            <img src="location3.png" width="80px">
+            <h3>Address</h3>
+            <p>plot.2 ojoalaba street Lagos</p>
+        </div>
+
+        <div class="content">
+            <img src="call3.png" width="80px">
+            <h3>Call</h3>
+            <p>+234 12121212</p>
+        </div>
+
+        <div class="content">
+            <img src="mail.png" width="80px">
+            <h3>Mail</h3>
+            <p>example@gmail.com</p>
+        </div>
+      </div>  
+    </div>
+
+    <div class="form-container">
+        <div class="form-cnt">
+            <h2>Send me message through form</h2>
+            <form action="">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea name="" id="msg" placeholder="say whats on your mind"></textarea>
+                <button id="btn">Send</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="head">
+           <h3>Referrels</h3>
+           <h3>About</h3>
+           <h3>Example</h3>
+           <h3 style="color: rgb(239, 250, 138);">Contact</h3>
+           <h3>See New Trending tasks</h3>
+        </div>
+   
+        <div class="media">
+          
+            <a href="https://vm.tiktok.com/ZMrPAcbsU/"> <img src="tik2.png" width="55px" style="mix-blend-mode: multiply;"></a>
+            <a href="https://whatsapp.com/dl/code=oUG39mctWu">   <img src="whatsapp.png" width="40px"></a>
+            <a href="https://x.com/AbbaUmar450563?s=09"> <img src="twitter.png" width="35px"></a>
+            <a href=""> <img src="discord.png" width="40px" style="mix-blend-mode: multiply;" onclick="alert('usrname:Abba umar')"></a>
+        </div>
+      
+   
+        <div class="page">
+            <h4>© 2024 D Global Tech. All Rights Reserved</h4>
+      </div>
+      </div>
+</body>
+</html>
